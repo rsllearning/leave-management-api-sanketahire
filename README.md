@@ -353,6 +353,33 @@ The project includes unit, web-slice, and integration tests:
 
 ---
 
+## Deliverable Verification Screenshots
+
+All required verification screenshots are captured and stored in the [`screenshots/`](./screenshots) directory:
+
+### 1. Application Startup
+Verification of application startup on embedded Tomcat port 8080 with the `dev` profile active:
+![Application Startup](./screenshots/01-application-startup.png)
+
+### 2. REST API Execution (Swagger UI & Endpoints)
+Verification of Swagger UI OpenAPI documentation and interactive endpoint execution:
+- **Swagger UI Dashboard Overview:** [`02-rest-api-overview-swagger.png`](./screenshots/02-rest-api-overview-swagger.png)
+- **OpenAPI DTO & Error Schemas:** [`02-rest-api-schemas-swagger.png`](./screenshots/02-rest-api-schemas-swagger.png)
+- **`GET /leaves` Execution (200 OK):** [`02-rest-api-get-all-leaves.png`](./screenshots/02-rest-api-get-all-leaves.png)
+- **`GET /leaves/{id}` Execution (200 OK):** [`02-rest-api-get-leave-by-id.png`](./screenshots/02-rest-api-get-leave-by-id.png)
+- **Error Response Contract (404):** [`02-rest-api-response-contract-404.png`](./screenshots/02-rest-api-response-contract-404.png)
+
+![REST API Execution](./screenshots/02-rest-api-get-all-leaves.png)
+
+### 3. Test Suite Execution (20/20 Passing)
+Verification of complete test suite passing cleanly with 0 failures:
+- **Test Suite Start:** [`03-test-suite-execution-start.png`](./screenshots/03-test-suite-execution-start.png)
+- **Test Suite Success Summary:** [`03-test-suite-success.png`](./screenshots/03-test-suite-success.png)
+
+![Test Suite Success](./screenshots/03-test-suite-success.png)
+
+---
+
 ## Documentation References
 The original training materials and assignment guidelines are available in the [`docs/`](./docs) folder:
 * [`docs/Training.Material.Spring Boot.pdf`](./docs/Training.Material.Spring%20Boot.pdf)
